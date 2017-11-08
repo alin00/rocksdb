@@ -21,10 +21,10 @@ set (THIRDPARTY_LIBS "")         # Initialization, don't touch
 #
 # Edit these 4 lines to define paths to GFLAGS
 #
-set(GFLAGS_HOME $ENV{THIRDPARTY_HOME}/Gflags.Library)
-set(GFLAGS_INCLUDE ${GFLAGS_HOME}/inc/include)
-set(GFLAGS_LIB_DEBUG ${GFLAGS_HOME}/bin/debug/amd64/gflags.lib)
-set(GFLAGS_LIB_RELEASE ${GFLAGS_HOME}/bin/retail/amd64/gflags.lib)
+set(GFLAGS_HOME $ENV{WORKSPACE}/gflags)
+set(GFLAGS_INCLUDE ${GFLAGS_HOME}/build2/include)
+set(GFLAGS_LIB_DEBUG ${GFLAGS_HOME}/build2/lib/Release/gflags_static.lib)
+set(GFLAGS_LIB_RELEASE ${GFLAGS_HOME}/build2/lib/Release/gflags_static.lib)
 
 # ================================================== GFLAGS ==================================================
 #
