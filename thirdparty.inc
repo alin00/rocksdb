@@ -210,10 +210,10 @@ endif ()
 #
 # Edit these 4 lines to define paths to Jemalloc
 #
-set(JEMALLOC_HOME $ENV{THIRDPARTY_HOME}/Jemalloc.Library)
-set(JEMALLOC_INCLUDE ${JEMALLOC_HOME}/inc/include)
-set(JEMALLOC_LIB_DEBUG ${JEMALLOC_HOME}/bin/debug/amd64/jemalloc.lib)
-set(JEMALLOC_LIB_RELEASE ${JEMALLOC_HOME}/bin/retail/amd64/jemalloc.lib)
+set(JEMALLOC_HOME $ENV{WORKSPACE}/jemalloc)
+set(JEMALLOC_INCLUDE ${JEMALLOC_HOME}/include ${JEMALLOC_HOME}/include/msvc_compat)
+set(JEMALLOC_LIB_DEBUG ${JEMALLOC_HOME}/msvc/x64/Debug/jemallocd.lib)
+set(JEMALLOC_LIB_RELEASE ${JEMALLOC_HOME}/msvc/x64/Release/jemalloc.lib)
 
 # ================================================== JEMALLOC ==================================================
 #
